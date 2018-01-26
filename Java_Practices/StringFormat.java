@@ -35,7 +35,7 @@ public class StringFormat {
 		return r ? "MATCH":"FAIL";
 	}
 
-	public boolean Solve(String text, String format) {
+	public boolean Solve() {
 		int formatIndex = 0;
 		for(int i=0; i<text.length(); i++) {
 			if(format.charAt(formatIndex) == '~') {
