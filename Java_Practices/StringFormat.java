@@ -2,6 +2,26 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
+/*
+You are given a line of text and a "string format".
+The format seems to be heavily inspired from LIKE clauses from SQL and uses two special characters, ? and ~:
+
+?: Matches exactly one character.
+~: Matches any number of characters, from zero (none) to the entire string.
+Any other characters: Matches exactly that character.
+
+It seems that the format does not include escaping special characters (good for you!)
+so ? and ~ in text may only be matched by ? and ~ under the right circumstances.
+The backslash character will match only the backslash character itself.
+
+The text is considered to MATCH if the format describes the text from start to end with no
+characters rejected by the pattern. If it does not match, write FAIL instead.
+
+
+Problem by: Unihedron
+https://www.codingame.com/profile/1d1729a2d8c008c6cf728ee88f1faa6d4978712
+*/
+
 public class StringFormat {
 	public String text;
 	public String format;
