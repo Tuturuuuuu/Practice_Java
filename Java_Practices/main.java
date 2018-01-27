@@ -10,5 +10,8 @@ public class main{
 		int[] x = {-5, -4, -2, 12, -40, 4, 2, 18, 11, 5, 2};
 		TemperatureToZero t = new TemperatureToZero(x.length, x);
 		t.intClosestToZero();
+
+		int[] y = {5,15,17,3,8,11,28,6,55,7};
+		HorseMatcher h = new HorseMatcher(y);
 	}
 }
